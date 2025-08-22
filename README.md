@@ -7,3 +7,4 @@ I decided to go for a rice with a Gentoo feeling to it.
 ## More to come ... I promise :)
 
 ## Screenshots
+![Clean desktop.](https://github.com/D4rkOnE/Gentoo-DWL-laptop/blob/main/clean.png)

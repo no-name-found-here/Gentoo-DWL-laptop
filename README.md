@@ -2,7 +2,4 @@
 I finally took the time to create this page which describes my 2 biggest loves (besides my girlfriend and my cat): Gentoo and DWL.  I'm fully aware my other repositories are about Archlinux which isn't a bad distribution at all, but I have been using Gentoo exclusively on my dekstop since 2004 and experimented with it when it was still called Enoch.
 Because my laptop is used a lot less than my desktop I never bothered with installing Gentoo on it at first.
 
-## DWL
-The choice was either Sway or DWL and I ended up going for DWL eventually.
-
 ## More to come ... I promise :)

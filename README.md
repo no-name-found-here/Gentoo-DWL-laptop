@@ -5,3 +5,5 @@ Because my laptop is used a lot less than my desktop I never bothered with insta
 I decided to go for a rice with a Gentoo feeling to it.
 
 ## More to come ... I promise :)
+
+## Screenshots

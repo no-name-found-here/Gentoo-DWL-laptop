@@ -8,3 +8,10 @@ I decided to go for a rice with a Gentoo feeling to it.
 
 ## Screenshots
 ![Clean desktop.](https://github.com/D4rkOnE/Gentoo-DWL-laptop/blob/main/clean.png)
+
+![Wofi](https://github.com/D4rkOnE/Gentoo-DWL-laptop/blob/main/wofi.png)
+
+![Fake busy](https://github.com/D4rkOnE/Gentoo-DWL-laptop/blob/main/fake_busy.png)
+
+![Fake busy 2](https://github.com/D4rkOnE/Gentoo-DWL-laptop/blob/main/fake_busy2.png)
+

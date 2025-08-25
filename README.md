@@ -4,7 +4,13 @@ Because my laptop is used a lot less than my desktop I never bothered with insta
 
 I decided to go for a rice with a Gentoo feeling to it.
 
-## More to come ... I promise :)
+## Dotfiles.tar
+The dotfiles.tar file contains:
+- ds: the binary to start dwl.  I put it in /usr/bin and simply boot to console. It's short for "Dwl Start" :)  It's only content is ```dwl -s .local/src/dwl-startup.sh```.
+- dwl.tar: my entire ~/.local/src/dwl folder with all applied patches and my own modified config.h
+- dwl-startup.sh: I also put this in ~/.local/src.  This script contains everything that needs to be started with DWL.  Yes I'm well aware about an autostart patch but I prefer this.
+- dunst, kitty, waybar and wofi are folders with my configs that could be placed in ~/.config.
+- gentoo_alien.jpg is my wallpaper
 
 ## Screenshots
 ![Clean desktop.](https://github.com/D4rkOnE/Gentoo-DWL-laptop/blob/main/clean.png)

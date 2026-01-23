@@ -27,6 +27,19 @@ swayidle -w timeout 300 'swaylock --screenshots --clock --effect-blur 7x5 -f' &
 exec /usr/libexec/polkit-gnome-authentication-agent-1
 ```
 
+## Patches
+DWL, by default, is very spartan.  But its functionalities can be extended with the patches from https://codeberg.org/dwl/dwl-patches.  I only applied the following patches:
+* gaps.patch from https://codeberg.org/dwl/dwl-patches/src/branch/main/patches/gaps because I prefer small gaps between windows.
+* focusdir.patch from https://codeberg.org/dwl/dwl-patches/src/branch/main/patches/focusdir because I was used to that from i3.
+* ipc.patch from https://codeberg.org/dwl/dwl-patches/src/branch/main/patches/ipc because this provides an ipc for wayland clients to get and set DWL state. The ipc is intended for status bars like Waybar like I'm using.
+
+## How to patch
+From the ~/.local/src/dwl folder, enter the command: patch -p1 < /path/to/filename.patch.  Then make and finally sudo make install clean.  Login in DWL again to see the changes.
+You can check beforehand with patch -p1 --dry-run < /path/to/filename.patch.
+
+## DWL config modifications
+DWL's configuration can be adapted by changing config.h and config.mk files in the ~/.local/src/dwl folder.  Modifying the C-code can be challenging to begin with. My changes and all keybinds are included in dotfiles.tar.
+
 ## config.h
 As you might know DWL is configured through modifying the config.h file and recompîling DWL's source code.  The following modifications were made.  This is a snippet of my config.h.  Keep in mind that I'm using a Belgian AZERTY keyboard.
 ```
@@ -65,9 +78,6 @@ static const char *suspendcmd[] = { "systemctl", "suspend", NULL};
 	TAGKEYS(          XKB_KEY_ccedilla, XKB_KEY_parenleft,                  8),
 
 ```
-
-## Applied patches
-By default DWL is pretty spartan.  I applied the gaps patch and IPC patch to interact with Waybar.
 
 ## Screenshots
 ![Clean desktop.](https://github.com/D4rkOnE/Gentoo-DWL-laptop/blob/main/clean.png)

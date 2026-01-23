@@ -27,6 +27,9 @@ swayidle -w timeout 300 'swaylock --screenshots --clock --effect-blur 7x5 -f' &
 exec /usr/libexec/polkit-gnome-authentication-agent-1
 ```
 
+## Auto-mount USB devices like external hard drives
+I prefer my USB connected external hard drives to be mounted automatically. For this I installed udisks2 which is then enabled at boot via ```systemctl enable --now udisks2.service```. As for automount I installed udiskie which is autostarted with ```udiskie --tray &``` in my dwl-startup.sh script.  External USB devices will now be auto-mounted and accessible via Thunar.  Udiskie in traymode is started via ```ds```.
+
 ## Patches
 DWL, by default, is very spartan.  But its functionalities can be extended with the patches from https://codeberg.org/dwl/dwl-patches.  I only applied the following patches:
 * gaps.patch from https://codeberg.org/dwl/dwl-patches/src/branch/main/patches/gaps because I prefer small gaps between windows.

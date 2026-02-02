@@ -4,7 +4,7 @@ Because my laptop is used a lot less than my desktop I never bothered with insta
 
 I decided to go for a rice with a Gentoo feeling to it.  I'm using DWL from https://codeberg.org/dwl/dwl which currently is ```dwl v0.8-dev-73-gab4cb6e-dirty```.
 
-As of August 2025 dwl is no longer maintained :( 
+As of August 2025 DWL is no longer maintained :( 
 
 ## Dotfiles.tar
 The dotfiles.tar file contains:
